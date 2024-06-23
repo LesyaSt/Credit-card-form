@@ -23,43 +23,59 @@
               class="inputNumber"
               type="text"
               value="0000 0000 0000 0000"
+              id="front-card" readonly
             />
-            <input class="inputName" type="text" value="jmeno" />
-            <input class="inputDate" type="text" value="00/00" />
+        
+            <input class="inputName" type="text" value="jmeno" id="jmeno" readonly />
+            <input class="inputDate" type="text" value="00/00" id="datum" readonly/>
           </div>
         </div>
 
         <div class="back">
-          <input type="text" name="" id="" value="000" />
+          <input type="text" name="" id="cvc-number" value="000" />
         </div>
       </div>
 
       <div class="main-input">
         <div class="card-name">
           <label for="cardholderName">Cardholder name</label>
-          <input type="text" id="cardholderName" placeholder="e.g. Jane Applessed"/>
+          <input class="holderName" type="text" id="cardholderName" placeholder="e.g. Jane Applessed"/>
         </div>
 
         <div class="card-number">
           <label for="card">Card number</label>
-          <input type="text" id="card"  placeholder="e.g. 1234 5678 9123 0000"/>
+          <input type="text" id="card"  placeholder="e.g. 1234 5678 9123 0000" oninput="checkInputLengthCard(this)" />
+          <p class="wrong-numbers">Wrong format, numbers only</p>
         </div>
 
         <div class="exp-date">
           <label for="exp">Exp. Date (MM/YY)</label>
-          <input type="text" id="exp"  placeholder="MM YY"/>
-          <!-- <input type="text" /> -->
+          <div class="data">
+          <input  class="mounth" type="text" id="exp"  placeholder="MM" oninput="checkInputDataFormat(this)"/>
+          <input class="year" type="text" id="exp2" placeholder="YY" oninput="checkInputDataFormatTwo(this)" />
+          
+          </div>
+          <p class="wrong-data">Can't be blank</p>
         </div>
 
         <div class="cvc-info">
           <label for="cvc">CVC</label>
-          <input type="text" id="cvc" placeholder="e.g. 123"/>
+          <input type="text" id="cvc" placeholder="e.g. 123" oninput="checkInputLength(this)"/>
+          <p class="wrong-cvc">Can't be blank</p>
         </div>
 
-        <div class="confirm">
-            <button>Confirm</button>
-                    </div>
-      </div>
+        <form class="confirm">
+            <button type="submit">Confirm</button>
+                  </form>
+                </div>
+                
+    </div>
+    <div class="done">
+      <img src="/images/icon-complete.svg" alt="done">
+      <h1>Thank you</h1>
+      <p>We've added your card details</p>
+      <button>Continue</button>
+
     </div>
     <script src="main.js"></script>
   </body>
