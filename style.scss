@@ -586,6 +586,13 @@ left: 760px;
               color: $VeryDarkViolet;
               // background-color: red;
             }
+            .wrong-numbers{
+              color: $red;
+              font-size: 14px;
+              margin-top: 5px;
+              margin-bottom: 20px;
+              display: none;
+                  }
           }
         
           .exp-date {
@@ -596,10 +603,11 @@ left: 760px;
             display: flex;
             flex-direction: column;
             justify-content: center;
+            // margin-top: 10px;
             input {
               height: 30px;
               margin-top: 10px;
-              width: 170px;
+              // width: 150px;
               border: 1px solid $LightGrayishViolet;
               border-radius: 5px;
               padding: 20px;
@@ -616,7 +624,26 @@ left: 760px;
               color: $VeryDarkViolet;
               // background-color: red;
             }
+            .wrong-data{
+              margin-top: 5px;
+              color: $red;
+              font-size: 14px;
+              display: none;
+              // font-weight: 700;
+            }
+            .data {
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+             .mounth{
+              width: 90px;
+             }
+             .year{
+              width: 90px;
+             }
+             }
           }
+
           .cvc-info {
             grid: 3;
             grid-column: 2/3;
@@ -626,7 +653,7 @@ left: 760px;
             flex-direction: column;
             justify-content: center;
             width: 120px;
-            margin-left: 40px;
+            margin-left: 90px;
             input {
               height: 30px;
               margin-top: 10px;
@@ -635,9 +662,11 @@ left: 760px;
               padding: 20px;
               font-size: 16px;
             }
+            
             input::placeholder{
                 color: $LightGrayishViolet;
             }
+
             label {
               text-transform: uppercase;
               letter-spacing: 2px;
@@ -645,6 +674,12 @@ left: 760px;
               font-weight: 700;
               color: $VeryDarkViolet;
               // background-color: red;
+            }
+            .wrong-cvc{
+              margin-top: 5px;
+              color: $red;
+              font-size: 14px;
+              display: none;
             }
           }
           .confirm{
@@ -668,6 +703,54 @@ left: 760px;
               font-size: 16px;
             }
         }
+        }
+        .done{
+          display: none;
+          flex-direction: column;
+         margin-top: 20px;
+          align-items: center;
+        // background-color: pink;
+        width: 400px;
+        height: 250px;
+        position: absolute;
+        top: 200px;
+        
+        left: 760px;
+        
+        
+          img{
+            width: 60px;
+            height: 60px;
+            margin: 10px;
+            // background-color: yellow;
+          }
+          h1{
+            margin: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 600;
+            // background-color: blue;
+          }
+          p{
+            margin: 10px;
+            color: $DarkGrayishViolet;
+            // background-color: red;
+          }
+          button{
+            margin: 20px 10px 10px 10px;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+                 width: 350px;
+                 height: 40px;
+                 background-color: $VeryDarkViolet;
+                 color: $White;
+                 border: none;
+                 border-radius: 5px;
+                 padding: 20px;
+               font-size: 16px;
+          }
         }
     }
   

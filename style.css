@@ -515,6 +515,13 @@
     font-weight: 700;
     color: hsl(278, 68%, 11%);
   }
+  .main-input .card-number .wrong-numbers {
+    color: hsl(0, 100%, 66%);
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    display: none;
+  }
   .main-input .exp-date {
     grid: 3;
     grid-column: 1/2;
@@ -525,7 +532,6 @@
   .main-input .exp-date input {
     height: 30px;
     margin-top: 10px;
-    width: 170px;
     border: 1px solid hsl(270, 3%, 87%);
     border-radius: 5px;
     padding: 20px;
@@ -544,6 +550,23 @@
     font-weight: 700;
     color: hsl(278, 68%, 11%);
   }
+  .main-input .exp-date .wrong-data {
+    margin-top: 5px;
+    color: hsl(0, 100%, 66%);
+    font-size: 14px;
+    display: none;
+  }
+  .main-input .exp-date .data {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .main-input .exp-date .data .mounth {
+    width: 90px;
+  }
+  .main-input .exp-date .data .year {
+    width: 90px;
+  }
   .main-input .cvc-info {
     grid: 3;
     grid-column: 2/3;
@@ -551,7 +574,7 @@
     flex-direction: column;
     justify-content: center;
     width: 120px;
-    margin-left: 40px;
+    margin-left: 90px;
   }
   .main-input .cvc-info input {
     height: 30px;
@@ -574,6 +597,12 @@
     font-weight: 700;
     color: hsl(278, 68%, 11%);
   }
+  .main-input .cvc-info .wrong-cvc {
+    margin-top: 5px;
+    color: hsl(0, 100%, 66%);
+    font-size: 14px;
+    display: none;
+  }
   .main-input .confirm {
     grid: 4;
     grid-column: 1/3;
@@ -586,6 +615,47 @@
     align-items: center;
     width: 100%;
     height: 50px;
+    background-color: hsl(278, 68%, 11%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 16px;
+  }
+  .done {
+    display: none;
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: center;
+    width: 400px;
+    height: 250px;
+    position: absolute;
+    top: 200px;
+    left: 760px;
+  }
+  .done img {
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+  }
+  .done h1 {
+    margin: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+  }
+  .done p {
+    margin: 10px;
+    color: hsl(279, 6%, 55%);
+  }
+  .done button {
+    margin: 20px 10px 10px 10px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 40px;
     background-color: hsl(278, 68%, 11%);
     color: hsl(0, 0%, 100%);
     border: none;

@@ -21,7 +21,7 @@ document.getElementById('cvc').addEventListener('input', function(){
 
 function checkInputLength(input){
     const maxLength = 3;
-    // let 
+    
     let value = input.value;
     let digits = '';
     for (let i = 0; i < value.length && digits.length < maxLength; i++){
