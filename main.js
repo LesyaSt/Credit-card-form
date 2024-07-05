@@ -12,7 +12,7 @@ document.getElementById('exp').addEventListener('input', function(){
     document.getElementById('datum').value = this.value;
 });
 document.getElementById('exp2').addEventListener('input', function(){
-    document.getElementById('datum').value = this.value;
+    document.getElementById('datumYear').value = this.value;
 });
 
 document.getElementById('cvc').addEventListener('input', function(){
@@ -66,19 +66,47 @@ function checkInputDataFormat(input){
     input.value = digits;
     
 }
+
 function checkInputDataFormatTwo(input){
-    const maxLength = 3;
+    const maxLength = 2;
     
     let value = input.value;
     let digits = '';
 
     for (let i = 0; i < value.length && digits.length < maxLength; i++){
         if (value[i] >= '0' && i % 3 === 0){
-            digits += '/';
+            // digits += '/';
         }
         digits += value[i];
     }
     
     input.value = digits;
+   
+}
+
+//function count letters in name
+// function checkLengthName(input){
+//     const maxLength = 15;
     
+//     let value = input.value;
+//     let digits = '';
+
+//     for (let i = 0; i < value.length && digits.length < maxLength; i++){
+//         if (value[i] >= '0' && i % 16 === 0){
+//             // digits += '/';
+//         }
+//         digits += value[i];
+//     }
+    
+//     input.value = digits;
+    
+// }
+// function checkLengthName(input){
+
+function checkLengthName(input){
+    const maxLength = 15;
+    const value = input.value;
+if (value.length > maxLength || /[^a-zA-Z]/.test(value)){
+    input.value = value.substring(0, maxLength).replace(/[^a-zA-Z]/g, ' ')
+}
 }

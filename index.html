@@ -26,9 +26,13 @@
               id="front-card" readonly
             />
         
-            <input class="inputName" type="text" value="jmeno" id="jmeno" readonly />
-            <input class="inputDate" type="text" value="00/00" id="datum" readonly/>
+            <input class="inputName" type="text" value="text" id="jmeno" readonly />
+            <div class="dataInFront">
+           <input class="inputDate" type="text" value="00" id="datum" readonly/>
+           <h1>/</h1>
+           <input class="inputDateTwo" type="text" value="00" id="datumYear" readonly/>
           </div>
+        </div>
         </div>
 
         <div class="back">
@@ -39,7 +43,7 @@
       <div class="main-input">
         <div class="card-name">
           <label for="cardholderName">Cardholder name</label>
-          <input class="holderName" type="text" id="cardholderName" placeholder="e.g. Jane Applessed"/>
+          <input class="holderName" type="text" id="cardholderName" placeholder="e.g. Jane Applessed" oninput="checkLengthName(this)"/>
         </div>
 
         <div class="card-number">

@@ -18,6 +18,8 @@ $VeryDarkViolet: hsl(278, 68%, 11%);
 $focusInput: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
 $red: hsl(0, 100%, 66%);
 
+
+// desktop
 @media screen and (min-width: 1024px) {
   .main-container {
     display: flex;
@@ -57,8 +59,25 @@ $red: hsl(0, 100%, 66%);
           grid-template-columns: repeat(2, 1fr);
           border-radius: 5px;
           margin: 0 10px 10px 10px;
-          // margin-bottom: 0px;
 
+          // margin-bottom: 0px;
+.dataInFront{
+  display: flex;
+  flex-direction: row;
+  // justify-content: center;
+  align-items: center;
+  // background-color: red;
+  width: 125px;
+  margin-left: 65px;
+
+  h1{
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 24px;
+    font-weight: 200;
+    color: $White;
+    
+  }
+}
           .inputNumber {
             grid-row: 1;
             grid-column: 1 / 3;
@@ -88,15 +107,32 @@ $red: hsl(0, 100%, 66%);
           .inputDate {
             grid: 2;
             grid-column: 2 / 3;
+            text-align: center;
             border-radius: 5px;
             background: none;
             height: 40px;
-            width: 60px;
-            margin-left: 90px;
+            width: 40px;
+            margin-left: 0px;
             color: $White;
             border: none;
             font-size: 18px;
             letter-spacing: 1px;
+            // background-color: red;
+          }
+          .inputDateTwo{
+            grid: 2;
+            grid-column: 2 / 3;
+            text-align: center;
+            border-radius: 5px;
+            background: none;
+            height: 40px;
+            width: 40px;
+            margin-left: 0px;
+            color: $White;
+            border: none;
+            font-size: 18px;
+            letter-spacing: 1px;
+            // background-color: blue;
           }
         }
       }
@@ -401,6 +437,10 @@ left: 760px;
 
 
 
+
+
+// phone
+
 @media screen and (max-width: 767px) {
     .main-container {
         display: flex;
@@ -444,7 +484,23 @@ left: 760px;
                   border-radius: 5px;
                   margin: 0 10px 10px 10px;
                   // margin-bottom: 0px;
-        
+                  .dataInFront{
+                    display: flex;
+                    flex-direction: row;
+                    // justify-content: center;
+                    align-items: center;
+                    // background-color: red;
+                    width: 75px;
+                    margin-left: 0px;
+                  
+                    h1{
+                      font-family: "Space Grotesk", sans-serif;
+                      font-size: 24px;
+                      font-weight: 200;
+                      color: $White;
+                      
+                    }
+                  }
                   .inputNumber {
                     grid-row: 1;
                     grid-column: 1 / 3;
@@ -465,11 +521,13 @@ left: 760px;
                     border-radius: 5px;
                     background: none;
                     height: 40px;
+                    width: 210px;
                     color: $White;
                     border: none;
                     text-transform: uppercase;
                     letter-spacing: 2px;
                     font-size: 18px;
+                    // background-color: blue;
                   }
                   .inputDate {
                     grid: 2;
@@ -477,12 +535,27 @@ left: 760px;
                     border-radius: 5px;
                     background: none;
                     height: 40px;
-                    width: 60px;
-                    // margin-left: 0px;
+                    width: 30px;
+                    margin-left: 0px;
                     color: $White;
                     border: none;
                     font-size: 18px;
                     letter-spacing: 1px;
+                  }
+                  .inputDateTwo{
+                    grid: 2;
+                    grid-column: 2 / 3;
+                    text-align: center;
+                    border-radius: 5px;
+                    background: none;
+                    height: 40px;
+                    width: 40px;
+                    margin-left: 0px;
+                    color: $White;
+                    border: none;
+                    font-size: 18px;
+                    letter-spacing: 1px;
+                    // background-color: blue;
                   }
                 }
               }
@@ -756,6 +829,8 @@ left: 760px;
   
 
 
+    // iPad
+
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .main-container {
     display: flex;
@@ -802,7 +877,23 @@ left: 760px;
           border-radius: 5px;
           margin: 0 10px 10px 10px;
           // margin-bottom: 0px;
-
+          .dataInFront{
+            display: flex;
+            flex-direction: row;
+            // justify-content: center;
+            align-items: center;
+            // background-color: red;
+            width: 125px;
+            margin-left: 65px;
+          
+            h1{
+              font-family: "Space Grotesk", sans-serif;
+              font-size: 24px;
+              font-weight: 200;
+              color: $White;
+              
+            }
+          }
           .inputNumber {
             grid-row: 1;
             grid-column: 1 / 3;
@@ -1027,7 +1118,63 @@ left: 760px;
   }
   }
 }
+.done{
+  display: none;
+  flex-direction: column;
+ margin-top: 20px;
+  align-items: center;
+// background-color: pink;
+width: 400px;
+height: 250px;
+position: absolute;
+top: 200px;
+
+left: 760px;
+
+
+  img{
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    // background-color: yellow;
   }
+  h1{
+    margin: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    // background-color: blue;
+  }
+  p{
+    margin: 10px;
+    color: $DarkGrayishViolet;
+    // background-color: red;
+  }
+  button{
+    margin: 20px 10px 10px 10px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+         width: 350px;
+         height: 40px;
+         background-color: $VeryDarkViolet;
+         color: $White;
+         border: none;
+         border-radius: 5px;
+         padding: 20px;
+       font-size: 16px;
+  }
+}
+  }
+
+
+
+
+
+
+
+
 
 
 @media screen and (min-width: 768px) and (max-width: 1100px) {
