@@ -84,24 +84,8 @@ function checkInputDataFormatTwo(input){
    
 }
 
-//function count letters in name
-// function checkLengthName(input){
-//     const maxLength = 15;
-    
-//     let value = input.value;
-//     let digits = '';
 
-//     for (let i = 0; i < value.length && digits.length < maxLength; i++){
-//         if (value[i] >= '0' && i % 16 === 0){
-//             // digits += '/';
-//         }
-//         digits += value[i];
-//     }
-    
-//     input.value = digits;
-    
-// }
-// function checkLengthName(input){
+
 
 function checkLengthName(input){
     const maxLength = 15;
@@ -169,17 +153,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 
-//   document.getElementById('submit').addEventListener('click', function(){
-
-//     document.getElementById('basic').display = 'none';
-
-//     document.getElementById('submit').classList.add('hidden');
-
-//     document.getElementById('done-message').classList.add('finish');
-//   });
-
-
-
   document.addEventListener("DOMContentLoaded", function () {
     const submitButton = document.getElementById("submit");
     const containerBase = document.getElementById('basic');
@@ -228,19 +201,3 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 
-//   document.getElementById('submit').addEventListener('click', function(event) {
-//     event.preventDefault();
-//     const input1 = document.getElementById('cardholderName').value.trim();
-//     const input2 = document.getElementById('card').value;
-//     const input3 = document.getElementById('exp').value;
-//     const input4 = document.getElementById('exp2').value;
-//     const input5 = document.getElementById('cvc').value;
-
-
-//     if (input1 && input2 && input3 && input4 && input5) {
-//         document.getElementById('basic').style.visibility = "hidden";
-//         document.getElementById('done-message').classList.remove('hidden');
-//     } else {
-//         alert('Будь ласка, заповніть всі поля.');
-//     }
-// });
