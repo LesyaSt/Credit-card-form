@@ -40,7 +40,7 @@
         </div>
       </div>
 
-      <div class="main-input">
+      <div class="main-input basic-cont" id="basic">
         <div class="card-name">
           <label for="cardholderName">Cardholder name</label>
           <input class="holderName" type="text" id="cardholderName" placeholder="e.g. Jane Applessed" oninput="checkLengthName(this)"/>
@@ -48,37 +48,37 @@
 
         <div class="card-number">
           <label for="card">Card number</label>
-          <input type="text" id="card"  placeholder="e.g. 1234 5678 9123 0000" oninput="checkInputLengthCard(this)" />
-          <p class="wrong-numbers">Wrong format, numbers only</p>
+          <input type="text" id="card"  placeholder="e.g. 1234 5678 9123 0000" oninput="checkInputLengthCard(this)" required />
+          <p class="wrong-numbers" id="wrong-card">Can't be blank</p>
         </div>
 
         <div class="exp-date">
           <label for="exp">Exp. Date (MM/YY)</label>
           <div class="data">
-          <input  class="mounth" type="text" id="exp"  placeholder="MM" oninput="checkInputDataFormat(this)"/>
-          <input class="year" type="text" id="exp2" placeholder="YY" oninput="checkInputDataFormatTwo(this)" />
+          <input  class="mounth" type="text" id="exp" required placeholder="MM" oninput="checkInputDataFormat(this)"/>
+          <input class="year" type="text" id="exp2" required placeholder="YY" oninput="checkInputDataFormatTwo(this)" />
           
           </div>
-          <p class="wrong-data">Can't be blank</p>
+          <p class="wrong-data" id="no-data"  >Can't be blank</p>
         </div>
 
         <div class="cvc-info">
           <label for="cvc">CVC</label>
           <input type="text" id="cvc" placeholder="e.g. 123" oninput="checkInputLength(this)"/>
-          <p class="wrong-cvc">Can't be blank</p>
+          <p class="wrong-cvc" id="error-cvc">Can't be blank</p>
         </div>
 
         <form class="confirm">
-            <button type="submit">Confirm</button>
+            <button class="hidden" id="submit" type="submit" >Confirm</button>
                   </form>
                 </div>
                 
     </div>
-    <div class="done">
+    <div class="done finish" id="done-message">
       <img src="/images/icon-complete.svg" alt="done">
       <h1>Thank you</h1>
       <p>We've added your card details</p>
-      <button>Continue</button>
+      <button id="continue">Continue</button>
 
     </div>
     <script src="main.js"></script>

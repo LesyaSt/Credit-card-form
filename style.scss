@@ -19,8 +19,17 @@ $focusInput: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
 $red: hsl(0, 100%, 66%);
 
 
-// desktop
+// desk
 @media screen and (min-width: 1024px) {
+  // .basic-cont{
+  //   display: none;
+  // }
+  // .hidden{
+  //   display: none;
+  // }
+  // .done{
+  //   display: flex;
+  // }
   .main-container {
     display: flex;
     flex-direction: row;
@@ -259,7 +268,7 @@ color: $red;
 font-size: 14px;
 margin-top: 5px;
 margin-bottom: 20px;
-display: none;
+display: flex;
     }
   }
 
@@ -309,7 +318,7 @@ display: none;
       margin-top: 5px;
       color: $red;
       font-size: 14px;
-      display: none;
+      display: flex;
       // font-weight: 700;
     }
   }
@@ -353,7 +362,7 @@ display: none;
       margin-top: 5px;
       color: $red;
       font-size: 14px;
-      display: none;
+      display: visible;
     }
   }
   .confirm{
@@ -376,6 +385,7 @@ display: none;
         padding: 20px;
       font-size: 16px;
     }
+    
   }
   
 }

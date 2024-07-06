@@ -219,7 +219,7 @@
     font-size: 14px;
     margin-top: 5px;
     margin-bottom: 20px;
-    display: none;
+    display: flex;
   }
   .main-input .exp-date {
     grid: 3;
@@ -267,7 +267,7 @@
     margin-top: 5px;
     color: hsl(0, 100%, 66%);
     font-size: 14px;
-    display: none;
+    display: flex;
   }
   .main-input .cvc-info {
     grid: 3;
@@ -310,7 +310,7 @@
     margin-top: 5px;
     color: hsl(0, 100%, 66%);
     font-size: 14px;
-    display: none;
+    display: visible;
   }
   .main-input .confirm {
     grid: 4;
